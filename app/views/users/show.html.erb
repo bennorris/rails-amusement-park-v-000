@@ -1,0 +1,16 @@
+<% if @user.admin %>
+   Welcome, ADMIN
+ <% end %>
+
+<%=@message if @message %>
+
+Name: <%=@user.name%><br>
+<% if @user.mood%>
+Mood: <%=@user.mood%><br>
+<% end %>
+Tickets: <%=@user.tickets%><br>
+Height: <%=@user.height%><br>
+
+
+
+<%=link_to("See attractions", attractions_path) %>
